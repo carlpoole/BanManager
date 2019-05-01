@@ -42,7 +42,7 @@ public class UnmuteIpCommand extends BukkitCommand<BanManager> {
 
     final String reason = args.length > 1 ? CommandUtils.getReason(1, args).getMessage() : "";
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

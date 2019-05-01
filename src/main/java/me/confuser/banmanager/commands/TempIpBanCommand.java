@@ -77,7 +77,7 @@ public class TempIpBanCommand extends AutoCompleteNameTabCommand<BanManager> {
     final long expires = expiresCheck;
     final String reason = parser.getReason().getMessage();
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

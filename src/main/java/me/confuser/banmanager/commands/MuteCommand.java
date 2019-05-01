@@ -97,7 +97,7 @@ public class MuteCommand extends AutoCompleteNameTabCommand<BanManager> {
 
     final Reason reason = parser.getReason();
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

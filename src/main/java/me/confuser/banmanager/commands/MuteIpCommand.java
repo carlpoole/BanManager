@@ -70,7 +70,7 @@ public class MuteIpCommand extends AutoCompleteNameTabCommand<BanManager> {
 
     final String reason = parser.getReason().getMessage();
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

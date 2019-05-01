@@ -70,7 +70,7 @@ public class UnmuteCommand extends BukkitCommand<BanManager> implements TabCompl
 
     final String reason = parser.getReason().getMessage();
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

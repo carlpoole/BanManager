@@ -55,7 +55,7 @@ public class DeleteCommand extends BukkitCommand<BanManager> {
 
     if (ids.size() == 0) return false;
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

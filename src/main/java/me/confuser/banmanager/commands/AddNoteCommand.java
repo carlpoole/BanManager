@@ -41,7 +41,7 @@ public class AddNoteCommand extends AutoCompleteNameTabCommand<BanManager> {
     final boolean isUUID = playerName.length() > 16;
     final String message = StringUtils.join(args, " ", 1, args.length);
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

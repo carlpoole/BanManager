@@ -33,7 +33,7 @@ public class DeleteLastWarningCommand extends AutoCompleteNameTabCommand<BanMana
     final String playerName = args[0];
     final boolean isUUID = playerName.length() > 16;
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {

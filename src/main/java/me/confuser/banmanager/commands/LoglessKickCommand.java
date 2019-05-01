@@ -67,7 +67,7 @@ public class LoglessKickCommand extends BukkitCommand<BanManager> {
 
     final String reason = args.length > 1 ? parser.getReason().getMessage() : "";
 
-    plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable() {
+    plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
 
       @Override
       public void run() {
